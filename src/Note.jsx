@@ -13,7 +13,7 @@ const Note = ({ title, body, idx, deleteNote }, ...props) => {
       <h3>{title}</h3>
       <p>{body}</p>
       <button
-        onClick={() => {
+        onClick={idx => {
           deleteNote(idx);
         }}>
         Delete
