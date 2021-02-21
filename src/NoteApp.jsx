@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const NoteApp = props => {
   const [noteData, setNoteData] = useState([
     {
+      // Date.now() acts as pseudo-UUID and eliminates duplicates that would be created from using array index as key.
       id: Date.now(),
       title: 'A Sample Note',
       body: "Here's a sample note!",
@@ -11,17 +12,15 @@ const NoteApp = props => {
   const [noteTitle, setNoteTitle] = useState('');
   const [noteBody, setNoteBody] = useState('');
 
-  // Prevent page reload, reset note values to default
+  // Prevent page reload, reset incoming note values to default upon submission
   const handleSubmit = e => {
     e.preventDefault();
     setNoteTitle('');
     setNoteBody('');
   };
 
-  // Remove note with matching id
+  // Delete note with matching id
   const handleDelete = id => {
-    setNoteTitle('');
-    setNoteBody('');
     setNoteData([...noteData.filter(note => note.id !== id)]);
   };
 
