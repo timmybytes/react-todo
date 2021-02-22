@@ -1,14 +1,15 @@
 import React from 'react';
 import NoteApp from './NoteApp.jsx';
 import UltimateTodo from './UltimateTodo.jsx';
-import PracticeTodo from './PracticeTodo.jsx';
+import PracticeTodoTwo from './PracticeTodoTwo.jsx';
 
 function App() {
   return (
     <>
       {/* <NoteApp /> */}
       {/* <UltimateTodo /> */}
-      <PracticeTodo />
+      {/* <PracticeTodo /> */}
+      <PracticeTodoTwo />
     </>
   );
 }
