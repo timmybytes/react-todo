@@ -1,6 +1,6 @@
 # React Todo(s)
 
-This repo is for practicing building CRUD todo apps with React Hooks. Currently there is only a single homemade version via the `NoteApp` component, though other versions pulled from tutorials and/or differing build processes will be included as well. abs
+This repo is for practicing building CRUD todo apps with React Hooks. The `NoteApp` component is a homemade todo list app. `UltimateTodo` comes from [Code Boost's](https://www.youtube.com/watch?v=EbnmosN64JQ&feature=emb_title) tutorial.
 
 ## Usage
 
@@ -23,7 +23,7 @@ npm install
 
 ### Development
 
-Start a local server for see changes live.
+Start a local server for see changes live. All todo components are returned in the `App` component. Simply uncomment the one you'd like to work on/use.
 
 ```sh
 npm start
